@@ -415,3 +415,95 @@ body {
   margin-right: 0.5rem;
   flex-shrink: 0;
 }
+
+
+/* modules  */
+.card details.module-section {
+  margin-top: 15px;
+  background-color: #121212; /* black background */
+  border-radius: 8px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* light white shadow for black background */
+}
+
+.card details summary {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff; /* white text */
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.card .modules {
+  list-style-type: decimal;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.card .modules li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #ffffff; /* white text */
+}
+
+.warning-box1 {
+background-color: rgba(255, 0, 0, 0.1); 
+ border-left: 2px solid #69fcd6;
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #f3eaea;
+  text-shadow: 0 0 8px #69fcd6, 0 0 14px #ff4c4c;
+  box-shadow: 0 0 12px #b1efdf, 0 0 24px #ff4c4c66;
+  display: inline-block;
+  width: fit-content;
+   margin: 1.5rem auto; 
+   text-align: center; 
+ } 
+
+
+ /* money */
+ .cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6c6c, #f19c3b);
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 0 15px #ff6c6c88, 0 0 30px #f19c3b88;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff6c6ccc, 0 0 40px #f19c3bcc;
+}
+
+.pulse {
+  animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 15px #ff6c6c88, 0 0 30px #f19c3b88;
+  }
+  50% {
+    box-shadow: 0 0 25px #ff6c6ccc, 0 0 45px #f19c3bcc;
+  }
+  100% {
+    box-shadow: 0 0 15px #ff6c6c88, 0 0 30px #f19c3b88;
+  }
+}
+
+
+
+ 

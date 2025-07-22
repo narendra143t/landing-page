@@ -449,22 +449,8 @@ body {
   color: #ffffff; /* white text */
 }
 
-.warning-box1 {
-background-color: rgba(255, 0, 0, 0.1); 
- border-left: 2px solid #69fcd6;
-  border-radius: 5px;
-  padding: 0.6rem 1rem;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #ffffff;
-  text-shadow: 0 0 8px #0c0c0c, 0 0 14px #ff4c4c;
-  box-shadow: 0 0 12px #000000, 0 0 24px #ff4c4c66;
-  display: inline-block;
-  width: fit-content;
-   margin: 1.5rem auto; 
-   text-align: center; 
- } 
+/*  */
+
 
 
  /* money */
@@ -504,6 +490,197 @@ background-color: rgba(255, 0, 0, 0.1);
   }
 }
 
+/* testimonals */
+.testimonials {
+  background-color: transparent;
+  padding: 60px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #f19c3b; /* orange highlight for section title */
+  text-shadow: 0 0 10px #f19c3b;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #f19c3b;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f19c3b;
+  margin-bottom: 15px;
+}
+
+.testimonial-card .message {
+  font-style: italic;
+  font-size: 16px;
+  margin: 15px 0;
+  color: #dddddd;
+}
+
+.testimonial-card .name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #f19c3b;
+}
+
+.testimonial-card .role {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+.testimonial-card img {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #f19c3b;
+  }
+  to {
+    box-shadow: 0 0 20px #f19c3b, 0 0 30px #f19c3b;
+  }
+}
 
 
- 
+/* closing  */
+.closing-message {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  max-width: 100%;
+  padding: 30px 20px;
+  margin-top: 40px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.closing-message .message {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.closing-message .highlight {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f19c3b;
+  text-shadow: 0 0 8px #f19c3b, 0 0 15px #f19c3b;
+}
+
+.closing-message .subline {
+  font-size: 16px;
+  color: #dddddd;
+  margin-top: 10px;
+  display: block;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* moidule collaspe */
+/* Style for the expandable module section */
+.module-section {
+  background-color: #121212;
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 1rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.module-section summary {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #f19c3b;
+  padding: 0.5rem 0;
+  list-style: none;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+.module-section summary::marker,
+.module-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.module-section[open] summary {
+  color: #00e5ff;
+}
+
+.modules {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.modules li {
+  list-style: none;
+  padding: 4px 0;
+  color: #ccc;
+}
+
+.modules li strong {
+  color: #f19c3b;
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+/* Optional hover effect */
+.module-section summary:hover {
+  color: #ffcc70;
+}
+
+/* Smooth open/close transition (limited with <details>) */
+details[open] .modules {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* worning */
